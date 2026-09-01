@@ -100,6 +100,14 @@ b4f69d384ca92bbaf02f1b4ba363eb4f42e0a41b5f67ff864b5ad163a2c5f955
 패치 파일은 원본 ISO를 포함하지 않는 차등 패치이며, 적용 스크립트는 출력 검증이 끝난 뒤에만
 원본 경로를 교체합니다. 자세한 사용법과 checksum은 [Release의 README 및 manifest](https://github.com/Jungsik-won/Grandia3-Translate/releases/tag/v0.1.1-test)를 확인하세요.
 
+> **결과 ISO가 5GB를 넘는 이유**
+>
+> xdelta 패치는 변경분만 담은 파일이지만, 적용이 끝나면 전체 디스크 이미지가 새로 생성됩니다.
+> 이번 시험판은 한국어 텍스트와 하드서브 영상·이미지 데이터를 반영하는 과정에서 원본의 파일 배치와
+> 디스크 이미지 크기가 확장되어, 원본 `4,598,890,496 bytes`에서 결과 `5,757,884,416 bytes`가
+> 됩니다. 이는 패치 파일이 원본 ISO를 포함해서 커진 것이 아니며, 적용 시 결과 ISO를 저장할 수 있는
+> 여유 공간을 별도로 확보해야 한다는 뜻입니다.
+
 ### 패치 적용 후 결과 ISO
 
 | 항목 | 값 |
@@ -185,6 +193,11 @@ You must own the exact Japanese Disc 1 source ISO. The source SHA-256 must be
 `c588a7dada3bf7175bfe97b238b0ab4c77df6401a58d766829aec9d92f3596e8`; the patched output must be
 `b4f69d384ca92bbaf02f1b4ba363eb4f42e0a41b5f67ff864b5ad163a2c5f955`.
 
+The xdelta file contains only differences, but applying it creates a complete new disc image.
+For this test build, adding the Korean text, hard-subbed movies, and image data expands the disc
+layout from `4,598,890,496 bytes` to `5,757,884,416 bytes`. The larger output is therefore not
+because the patch contains the original ISO; make sure you have enough free space for the result ISO.
+
 ### Disclaimer
 
 This is an unofficial, non-commercial fan translation/research project and is not affiliated with
@@ -213,6 +226,11 @@ Grandia3-Translate は、PlayStation 2版『グランディアIII』日本版を
 正確な日本版 Disc 1 のISOを所有している必要があります。元ISOのSHA-256は
 `c588a7dada3bf7175bfe97b238b0ab4c77df6401a58d766829aec9d92f3596e8`、パッチ適用後のSHA-256は
 `b4f69d384ca92bbaf02f1b4ba363eb4f42e0a41b5f67ff864b5ad163a2c5f955` でなければなりません。
+
+xdeltaファイルは差分のみを含みますが、適用後は完全なディスクイメージが生成されます。
+この試験版では韓国語テキスト、字幕付き動画、画像データの反映によりディスク配置が拡張され、
+元の `4,598,890,496 bytes` から `5,757,884,416 bytes` になります。パッチにオリジナルISOが
+含まれているためではありません。適用前に結果ISOを保存できる空き容量を確保してください。
 
 ### 免責事項
 
