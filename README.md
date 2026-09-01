@@ -9,8 +9,8 @@
 텍스트를 추출하고, 번역하고, 실제 게임에 다시 적용하기 위한
 **PlayStation 2 일본판 『그란디아 III』 비공식 한국어화 프로젝트**입니다.
 
-<a href="https://github.com/Jungsik-won/Grandia3-Translate/releases/tag/v0.1.5-test"><img src="https://img.shields.io/badge/Release-v0.1.5--test-7c3aed?style=for-the-badge" alt="Release v0.1.5-test" /></a>
-<a href="https://github.com/Jungsik-won/Grandia3-Translate/releases/download/v0.1.5-test/Grandia3_KR_Disc1_Korean_095ce7a0_full.xdelta"><img src="https://img.shields.io/badge/⬇%20XDELTA%20%ED%8C%A8%EC%B9%98%20%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-eab308?style=for-the-badge&logo=github&logoColor=white" alt="Download xdelta patch" /></a>
+<a href="https://github.com/Jungsik-won/Grandia3-Translate/releases/tag/v0.1.6-test"><img src="https://img.shields.io/badge/Release-v0.1.6--test-7c3aed?style=for-the-badge" alt="Release v0.1.6-test" /></a>
+<a href="https://github.com/Jungsik-won/Grandia3-Translate/releases/download/v0.1.6-test/Grandia3_KR_Disc1_Korean_a7c08c6b_full.xdelta"><img src="https://img.shields.io/badge/⬇%20XDELTA%20%ED%8C%A8%EC%B9%98%20%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-eab308?style=for-the-badge&logo=github&logoColor=white" alt="Download xdelta patch" /></a>
 
 </div>
 
@@ -39,7 +39,7 @@
 
 ### 현재 저장소 소스 상태
 
-현재 `main`에는 `v0.1` 한글화 추출 완료 작업과 `v0.1.5-test` 시험 배포를 위한 문서·검증 도구가
+현재 `main`에는 `v0.1` 한글화 추출 완료 작업과 `v0.1.6-test` 시험 배포를 위한 문서·검증 도구가
 반영되어 있습니다. 최종 배포 ISO에 포함된 영상·이미지·원본 게임 데이터는 저작권 보호와 파일
 크기 문제로 Git 저장소에 넣지 않으며, Release의 차등 패치로만 제공합니다.
 
@@ -61,24 +61,24 @@
 
 <div align="center">
 
-<a href="https://github.com/Jungsik-won/Grandia3-Translate/releases/download/v0.1.5-test/Grandia3_KR_Disc1_Korean_095ce7a0_full.xdelta"><img src="https://img.shields.io/badge/⬇%20패치%20다운로드-XDELTA%202.13GB-16a34a?style=for-the-badge" alt="xdelta 패치 다운로드" /></a>
+<a href="https://github.com/Jungsik-won/Grandia3-Translate/releases/download/v0.1.6-test/Grandia3_KR_Disc1_Korean_a7c08c6b_full.xdelta"><img src="https://img.shields.io/badge/⬇%20패치%20다운로드-XDELTA%202.13GB-16a34a?style=for-the-badge" alt="xdelta 패치 다운로드" /></a>
 
 <br />
 <sub>버튼을 누르면 패치 파일을 바로 다운로드합니다. 저장소가 비공개인 동안에는 GitHub 로그인과 저장소 접근 권한이 필요합니다.</sub>
 
 </div>
 
-→ [Release 페이지 열기](https://github.com/Jungsik-won/Grandia3-Translate/releases/tag/v0.1.5-test)
+→ [Release 페이지 열기](https://github.com/Jungsik-won/Grandia3-Translate/releases/tag/v0.1.6-test)
 
-`v0.1.4-test`는 전투 중 작전 패널과 공용 UI 원본 색상·그림자 복구 전 판이므로 이 버전으로 대체되었습니다.
+`v0.1.5-test`를 기반으로 최신 렌더링 자막 이벤트와 0xD5/0x9B 수정분을 통합한 시험판입니다.
 
 | 항목 | 값 |
 | --- | --- |
-| 패치 버전 | `v0.1.5-test` |
+| 패치 버전 | `v0.1.6-test` |
 | 패치 형식 | `xdelta3 3.2.0 / VCDIFF` |
-| 패치 파일 | `Grandia3_KR_Disc1_Korean_095ce7a0_full.xdelta` |
-| 패치 크기 | `2,127,141,394 bytes` |
-| 패치 SHA-256 | `c5a34549a68b70847bd190c4350407ce80c9246e3c4a6c1045394fe900def0bf` |
+| 패치 파일 | `Grandia3_KR_Disc1_Korean_a7c08c6b_full.xdelta` |
+| 패치 크기 | `2,132,274,752 bytes` |
+| 패치 SHA-256 | `5e635effb8c59f389a5aae69d0aedeba4b9e32ce6a8c54f31f1ab795f104795b` |
 
 ### 2. 패치 적용 방법
 
@@ -96,11 +96,11 @@
 c588a7dada3bf7175bfe97b238b0ab4c77df6401a58d766829aec9d92f3596e8
 
 패치 적용 후 SHA-256
-095ce7a0b4b115d299ce30ea497780ff0670920d596afe5f18adf0f2c8c23514
+a7c08c6b98809850bd7ed943e15ff7aaf2b465f6e20ace0899b6cce2621564ec
 ```
 
 패치 파일은 원본 ISO를 포함하지 않는 차등 패치이며, 적용 스크립트는 출력 검증이 끝난 뒤에만
-원본 경로를 교체합니다. 자세한 사용법과 checksum은 [Release의 README 및 manifest](https://github.com/Jungsik-won/Grandia3-Translate/releases/tag/v0.1.5-test)를 확인하세요.
+원본 경로를 교체합니다. 자세한 사용법과 checksum은 [Release의 README 및 manifest](https://github.com/Jungsik-won/Grandia3-Translate/releases/tag/v0.1.6-test)를 확인하세요.
 
 > **결과 ISO가 5GB를 넘는 이유**
 >
@@ -115,10 +115,10 @@ c588a7dada3bf7175bfe97b238b0ab4c77df6401a58d766829aec9d92f3596e8
 | 항목 | 값 |
 | --- | --- |
 | 결과 ISO 크기 | `5,757,884,416 bytes` |
-| 결과 ISO SHA-256 | `095ce7a0b4b115d299ce30ea497780ff0670920d596afe5f18adf0f2c8c23514` |
+| 결과 ISO SHA-256 | `a7c08c6b98809850bd7ed943e15ff7aaf2b465f6e20ace0899b6cce2621564ec` |
 | 검증 | 원본 재적용 후 목표 ISO와 전체 byte 비교 통과 |
 
-### 3. v0.1.5-test 반영 범위
+### 3. v0.1.6-test 반영 범위
 
 | 영역 | 상태 |
 | --- | --- |
@@ -136,6 +136,11 @@ c588a7dada3bf7175bfe97b238b0ab4c77df6401a58d766829aec9d92f3596e8
 | 0x63 slot0·slot1 멀티슬롯 자막 트리거 / 0x62 안전 제외 | 반영 |
 | 0x9B 안전 sidecar 자막 경로 | 반영 |
 | GRM13 자막 30큐 발화 단위 재분할 | 반영 |
+| 렌더링 자막 normal events 62개 / cues 701개 | 반영 |
+| 42개 event request-slot 안정화 | 반영 |
+| 0xD5 request `0x059C` 교정 | 반영 |
+| 0x9B normal-tail direct 자막 9큐 | 반영 |
+| v0.1.6~v0.2.1 아이템 습득 실험 | 미포함 |
 
 이 시험판은 완성판이 아니라 실제 게임에서의 추가 검수가 필요한 누적 테스트 빌드이며, runtime test가
 아직 대기 중입니다.
@@ -200,16 +205,17 @@ The repository contains extracted text tables, Korean translation CSVs, the cent
 
 ### Download the test patch
 
-<a href="https://github.com/Jungsik-won/Grandia3-Translate/releases/download/v0.1.5-test/Grandia3_KR_Disc1_Korean_095ce7a0_full.xdelta"><img src="https://img.shields.io/badge/⬇%20DOWNLOAD%20XDELTA%20PATCH-2.13GB-16a34a?style=for-the-badge" alt="Download xdelta patch" /></a>
+<a href="https://github.com/Jungsik-won/Grandia3-Translate/releases/download/v0.1.6-test/Grandia3_KR_Disc1_Korean_a7c08c6b_full.xdelta"><img src="https://img.shields.io/badge/⬇%20DOWNLOAD%20XDELTA%20PATCH-2.13GB-16a34a?style=for-the-badge" alt="Download xdelta patch" /></a>
 
-→ [Open the v0.1.5-test Release](https://github.com/Jungsik-won/Grandia3-Translate/releases/tag/v0.1.5-test)
+→ [Open the v0.1.6-test Release](https://github.com/Jungsik-won/Grandia3-Translate/releases/tag/v0.1.6-test)
 
 You must own the exact Japanese Disc 1 source ISO. The source SHA-256 must be
 `c588a7dada3bf7175bfe97b238b0ab4c77df6401a58d766829aec9d92f3596e8`; the patched output must be
-`095ce7a0b4b115d299ce30ea497780ff0670920d596afe5f18adf0f2c8c23514`.
+`a7c08c6b98809850bd7ed943e15ff7aaf2b465f6e20ace0899b6cce2621564ec`.
 
-`v0.1.5-test` fixes the in-battle tactics panel labels and restores the original UI colour and
-shadow behaviour while retaining all cumulative Korean translation changes.
+`v0.1.6-test` adds 62 rendered subtitle events with 701 cues, stabilizes 42 request-slot events,
+fixes stream 0xD5 request `0x059C`, and preserves the user-approved 0x9B normal-tail direct path.
+The v0.1.6–v0.2.1 item pickup experiments are not included.
 
 The xdelta file contains only differences, but applying it creates a complete new disc image.
 For this test build, adding the Korean text, hard-subbed movies, and image data expands the disc
@@ -237,16 +243,17 @@ Grandia3-Translate は、PlayStation 2版『グランディアIII』日本版を
 
 ### 試験パッチのダウンロード
 
-<a href="https://github.com/Jungsik-won/Grandia3-Translate/releases/download/v0.1.5-test/Grandia3_KR_Disc1_Korean_095ce7a0_full.xdelta"><img src="https://img.shields.io/badge/⬇%20XDELTA%20%E3%83%91%E3%83%83%E3%83%81%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89-2.13GB-16a34a?style=for-the-badge" alt="xdeltaパッチをダウンロード" /></a>
+<a href="https://github.com/Jungsik-won/Grandia3-Translate/releases/download/v0.1.6-test/Grandia3_KR_Disc1_Korean_a7c08c6b_full.xdelta"><img src="https://img.shields.io/badge/⬇%20XDELTA%20%E3%83%91%E3%83%83%E3%83%81%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89-2.13GB-16a34a?style=for-the-badge" alt="xdeltaパッチをダウンロード" /></a>
 
-→ [v0.1.5-test Releaseを開く](https://github.com/Jungsik-won/Grandia3-Translate/releases/tag/v0.1.5-test)
+→ [v0.1.6-test Releaseを開く](https://github.com/Jungsik-won/Grandia3-Translate/releases/tag/v0.1.6-test)
 
 正確な日本版 Disc 1 のISOを所有している必要があります。元ISOのSHA-256は
 `c588a7dada3bf7175bfe97b238b0ab4c77df6401a58d766829aec9d92f3596e8`、パッチ適用後のSHA-256は
-`095ce7a0b4b115d299ce30ea497780ff0670920d596afe5f18adf0f2c8c23514` でなければなりません。
+`a7c08c6b98809850bd7ed943e15ff7aaf2b465f6e20ace0899b6cce2621564ec` でなければなりません。
 
-`v0.1.5-test` では、戦闘中の作戦パネル表示を修正し、累積した韓国語化を維持したまま
-UIの色と影の挙動をオリジナル仕様へ戻しました。
+`v0.1.6-test` では、レンダリング字幕62イベント・701キュー、42イベントのrequest-slot安定化、
+0xD5 request `0x059C` 修正、0x9B normal-tail direct 9キューを反映しました。
+v0.1.6〜v0.2.1のアイテム取得実験は含まれていません。
 
 xdeltaファイルは差分のみを含みますが、適用後は完全なディスクイメージが生成されます。
 この試験版では韓国語テキスト、字幕付き動画、画像データの反映によりディスク配置が拡張され、
@@ -261,6 +268,6 @@ xdeltaファイルは差分のみを含みますが、適用後は完全なデ�
 
 <div align="center">
 
-<sub>Grandia3-Translate · v0.1.5-test · Korean fan translation research project</sub>
+<sub>Grandia3-Translate · v0.1.6-test · Korean fan translation research project</sub>
 
 </div>
